@@ -141,13 +141,14 @@ def pig_latin(string):
     for word in string.split():
         if word[0] in vowels:
             result.append(word + "ay")
+        elif "qu" in word[:3]:  
+            qu_index = word.find("qu")
+            result.append(word[qu_index + 2:] + word[:qu_index + 2] + "ay")
         else:
-         if word.startswith("qu"):
-            result.append(word[2:] + "quay")
-         else:
             for i, letter in enumerate(word):
                 if letter in vowels:
                     result.append(word[i:] + word[:i] + "ay")
                     break
     return " ".join(result)
-print(pig_latin("hello world"))
+
+print(pig_latin("hello how are you"))
