@@ -1,0 +1,5 @@
+Hard to find correct class names
+XPath was tricky because links were nested
+Time consuming
+Confusing what to use in the powershell terminal
+Identifying the correct XPath to extract the list of Top 10 vulnerabilities from the OWASP page
